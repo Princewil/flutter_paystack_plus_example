@@ -1,1 +1,1 @@
-const String publicKey = '--paystack-public-key--';
+const String publicKey = 'Your public key';
