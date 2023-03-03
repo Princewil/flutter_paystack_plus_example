@@ -65,11 +65,9 @@ packages:
   flutter_paystack_plus:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "275c9d1fe7d0e779f648e3d43fa170f2c17574ee"
-      url: "https://github.com/Princewil/flutter_paystack_plus.git"
-    source: git
+      name: flutter_paystack_plus
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.0.1"
   flutter_test:
     dependency: "direct dev"
