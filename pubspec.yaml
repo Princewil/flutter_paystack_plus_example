@@ -12,7 +12,6 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  # js: ^0.6.4
   flutter_paystack_plus:
 
 dev_dependencies:

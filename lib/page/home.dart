@@ -77,9 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   try {
                     FlutterPaystackPlus.openPaystackPopup(
                         publicKey: publicKey,
-                        email: emailController.text,
+                        context: context,
+                        customerEmail: emailController.text,
                         amount: (amount * 100).toString(),
-                        ref: ref,
+                        reference: ref,
                         onClosed: () {
                           debugPrint('Could\'nt finish payment');
                         },
