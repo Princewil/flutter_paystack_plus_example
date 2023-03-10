@@ -75,9 +75,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   final ref = generateRef();
                   final amount = int.parse(amountController.text);
                   try {
-                    FlutterPaystackPlus.openPaystackPopup(
+                    return await FlutterPaystackPlus.openPaystackPopup(
                         publicKey: publicKey,
                         context: context,
+                        secretKey: payStackSecretKey,
+                        currency: 'NGN',
                         customerEmail: emailController.text,
                         amount: (amount * 100).toString(),
                         reference: ref,

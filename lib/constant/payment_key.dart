@@ -1,1 +1,2 @@
-const String publicKey = 'Your public key';
+const publicKey = '';
+const payStackSecretKey = "";
