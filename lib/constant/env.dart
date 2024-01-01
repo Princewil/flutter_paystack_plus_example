@@ -1,2 +1,2 @@
-const publicKey = '';
+const paystackPublicKey = '';
 const payStackSecretKey = "";

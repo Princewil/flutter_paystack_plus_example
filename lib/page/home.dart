@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_paystack_plus/flutter_paystack_plus.dart';
-import 'package:flutter_web_paystack_popup/constant/payment_key.dart';
+import 'package:flutter_web_paystack_popup/constant/env.dart';
 import 'package:flutter_web_paystack_popup/main.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   final amount = int.parse(amountController.text);
                   try {
                     return await FlutterPaystackPlus.openPaystackPopup(
-                        publicKey: publicKey,
+                        publicKey: paystackPublicKey,
                         context: context,
                         secretKey: payStackSecretKey,
                         currency: 'NGN',

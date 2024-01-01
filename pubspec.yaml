@@ -12,7 +12,10 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  flutter_paystack_plus: ^0.0.4
+  flutter_paystack_plus:
+  # flutter_paystack_plus:
+  #   git:
+  #     url: https://github.com/Princewil/flutter_paystack_plus.git
 
 dev_dependencies:
   flutter_test:
