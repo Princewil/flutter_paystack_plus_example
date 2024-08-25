@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Center(
                 child: Text(
                   projectTitle,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         color: Colors.black,
                         fontWeight: FontWeight.w800,
                       ),
@@ -83,6 +83,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         customerEmail: emailController.text,
                         amount: (amount * 100).toString(),
                         reference: ref,
+                        plan: '',
+                        callBackUrl: 'safe',
                         onClosed: () {
                           debugPrint('Could\'nt finish payment');
                         },
@@ -94,13 +96,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   }
                 },
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green[400]),
+                  backgroundColor: WidgetStateProperty.all(Colors.green[400]),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
                     'Pay${amountController.text.isEmpty ? '' : ' ₦${amountController.text}'} with Paystack',
-                    style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: Colors.white,
                           fontWeight: FontWeight.w500,
                         ),
