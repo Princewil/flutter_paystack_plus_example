@@ -37,8 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           padding: const EdgeInsets.all(24),
           alignment: Alignment.center,
-          width: MediaQuery.of(context).size.width * 0.4,
-          height: MediaQuery.of(context).size.height * 0.6,
+          width: MediaQuery.of(context).size.width * 0.9,
+          height: MediaQuery.of(context).size.height * 0.8,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             color: Colors.white,
